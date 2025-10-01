@@ -18,3 +18,4 @@ flutter:
   assets:
     - assets/images/
     - assets/sounds/
+    - assets/articles.json
