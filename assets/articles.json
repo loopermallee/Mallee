@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Flutter 101",
+    "description": "Learn the basics of Flutter",
+    "content": "Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase."
+  },
+  {
+    "title": "Dart Language",
+    "description": "Why Dart is great for mobile apps",
+    "content": "Dart is the programming language behind Flutter. It is easy to learn, has great tooling, and is optimized for building user interfaces."
+  },
+  {
+    "title": "State Management",
+    "description": "Different approaches to managing state",
+    "content": "There are many ways to manage state in Flutter, including setState, Provider, Riverpod, Bloc, and more. Choosing the right one depends on the complexity of your app."
+  },
+  {
+    "title": "Animations",
+    "description": "Bring your UIs to life",
+    "content": "Flutter provides rich support for animations through implicit and explicit animation widgets, making it easier to add delightful motion to your apps."
+  }
+]
