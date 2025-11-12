@@ -1,0 +1,36 @@
+name: Build Android APK
+
+on:
+  push:
+    branches:
+      - main   # or "master" depending on your repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Install Flutter
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.24.0" # Use latest stable
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: flutter pub get
+
+      # 4. Build release APK
+      - name: Build APK
+        run: flutter build apk --release
+
+      # 5. Upload APK as artifact (downloadable file)
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release
+          path: build/app/outputs/flutter-apk/app-release.apk
